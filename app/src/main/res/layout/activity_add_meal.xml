@@ -20,6 +20,8 @@
         android:layout_gravity="end"
         android:text="ادخل"
         android:id="@+id/enter"
+        android:background="@drawable/rounded_button"
+        android:layout_marginRight="12dp"
 
         />
 </LinearLayout>
