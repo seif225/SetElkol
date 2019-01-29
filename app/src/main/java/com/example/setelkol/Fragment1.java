@@ -37,7 +37,26 @@ public class Fragment1 extends Fragment {
        makeSug=view.findViewById(R.id.button_sug);
 
         list = new ArrayList<>();
-
+        RepoImp.getInstance().addItem(new Item("فتة"));
+        RepoImp.getInstance().addItem(new Item("كشري"));
+        RepoImp.getInstance().addItem(new Item("محشي"));
+        RepoImp.getInstance().addItem(new Item("شاورما"));
+        RepoImp.getInstance().addItem(new Item("عدس"));
+        RepoImp.getInstance().addItem(new Item("ملوخية"));
+        RepoImp.getInstance().addItem(new Item("سجق"));
+        RepoImp.getInstance().addItem(new Item("كبدة"));
+        RepoImp.getInstance().addItem(new Item("بيتزا"));
+        RepoImp.getInstance().addItem(new Item("ممبار"));
+        RepoImp.getInstance().addItem(new Item("كفتة"));
+        RepoImp.getInstance().addItem(new Item("مكرونة بشاميل"));
+        RepoImp.getInstance().addItem(new Item("رقاق"));
+        RepoImp.getInstance().addItem(new Item("سمك"));
+        RepoImp.getInstance().addItem(new Item("فراخ"));
+        RepoImp.getInstance().addItem(new Item("مسقعة"));
+        RepoImp.getInstance().addItem(new Item("حواوشي"));
+        RepoImp.getInstance().addItem(new Item("طواجن"));
+        RepoImp.getInstance().addItem(new Item("مكرونة بصلصة"));
+        RepoImp.getInstance().addItem(new Item("فراخ بانيه"));
 
 
         // set view model
