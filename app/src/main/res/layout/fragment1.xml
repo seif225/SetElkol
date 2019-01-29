@@ -25,6 +25,7 @@
             android:textSize="48dp"
             android:layout_gravity="center"
             android:gravity="center"
+            android:id="@+id/text_sug"
             />
     </android.support.v7.widget.CardView>
     <Button
@@ -35,6 +36,7 @@
         android:layout_margin="16dp"
         android:background="@drawable/rounded_button"
         android:padding="8dp"
+        android:id="@+id/button_sug"
         />
 
 
