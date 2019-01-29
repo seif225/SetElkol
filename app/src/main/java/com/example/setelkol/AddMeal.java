@@ -5,15 +5,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
-import com.example.setelkol.Model.FoodModel;
-import com.example.setelkol.Presenter.FoodPresenter;
+import com.example.setelkol.Room.Item;
+import com.example.setelkol.Room.RepoImp;
 
 public class AddMeal extends AppCompatActivity {
 
     EditText addMeal;
     Button enter;
-    FoodPresenter foodPresenter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +23,17 @@ public class AddMeal extends AppCompatActivity {
         addMeal=findViewById(R.id.add_meal_et);
         enter=findViewById(R.id.enter);
 
-        foodPresenter=new FoodPresenter();
+
 
         enter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                foodPresenter.onButtonMakeSug(new FoodModel(addMeal.getText().toString()));
-                addMeal.setText("");
+                RepoImp.getInstance().addItem(new Item(addMeal.getText().toString()));
+                // show toast
+                Toast.makeText(AddMeal.this,"Record Added", Toast.LENGTH_SHORT).show();
+                // get back to main activity
+                finish();
+
             }
         });
     }
