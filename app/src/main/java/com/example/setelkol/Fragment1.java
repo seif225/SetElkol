@@ -37,7 +37,7 @@ public class Fragment1 extends Fragment {
        makeSug=view.findViewById(R.id.button_sug);
 
         list = new ArrayList<>();
-        RepoImp.getInstance().addItem(new Item("bom"));
+
 
 
         // set view model
@@ -46,7 +46,7 @@ public class Fragment1 extends Fragment {
             @Override
             public void onChanged(@Nullable List<Item> items) {
                 // update DataSet
-                list.clear();
+
                 list.addAll(mViewModel.getListItems().getValue());
 
             }
@@ -54,9 +54,9 @@ public class Fragment1 extends Fragment {
         makeSug.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                for (int i = 0; i < list.size(); i++) {
-                    sugName.setText(list.get(i).getMeal());
-                }
+                int range = (list.size() - 0) ;
+                int ans=(int)(Math.random() * range);
+                sugName.setText(list.get(ans).getMeal());
             }
         });
        return view;

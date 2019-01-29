@@ -5,5 +5,5 @@ import android.arch.persistence.room.RoomDatabase;
 @Database(entities = {Item.class}, version = 1)
 public abstract class ItemDatabase extends RoomDatabase {
 
-        public abstract Dao itemDao();
+        public abstract DaoClass itemDao();
 }

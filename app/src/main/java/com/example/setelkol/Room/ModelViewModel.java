@@ -8,6 +8,7 @@ import android.util.Log;
 import java.util.List;
 
 public class ModelViewModel extends ViewModel {
+
     private final String TAG = this.getClass().getName();
 
     private LiveData<List<Item>> listItems;
