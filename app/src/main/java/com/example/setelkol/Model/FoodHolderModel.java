@@ -17,7 +17,7 @@ public class FoodHolderModel implements FoodContract.IFoodModel {
             foodItems.add(new FoodModel("عدس"));
             foodItems.add(new FoodModel("ملوخية"));
             foodItems.add(new FoodModel("سجق"));
-            foodItems.add(new FoodModel("كيدة"));
+            foodItems.add(new FoodModel("كبدة"));
             foodItems.add(new FoodModel("بيتزا"));
             foodItems.add(new FoodModel("ممبار"));
             foodItems.add(new FoodModel("كفتة"));
