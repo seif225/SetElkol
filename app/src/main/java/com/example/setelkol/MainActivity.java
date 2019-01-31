@@ -65,7 +65,8 @@ public class MainActivity extends AppCompatActivity {
     private void setupViewPager(ViewPager viewPager) {
         SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
         adapter.addFragment(new Fragment1(), "اقتراح الغداء");
-        adapter.addFragment(new Fragment2(), "قرأن و ادعية");
+        adapter.addFragment(new Fragment2(), "قرأن");
+        adapter.addFragment(new Fragment3(), "ادعية");
         viewPager.setAdapter(adapter);
     }
 

@@ -5,23 +5,10 @@
     android:layout_margin="8dp"
     android:padding="8dp"
     >
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="قرأن"
-    android:id="@+id/fragment2_tv1"
 
-    android:textSize="24sp"
-    android:background="@color/colorAccent"
-    />
-    <Button
+    <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ادعية"
-        android:id="@+id/fragment2_tv2"
-
-        android:textSize="24sp"
-        android:background="@color/colorPrimary"
-
-        />
+        android:layout_height="match_parent"
+        android:id="@+id/souraContainer"
+        android:padding="8dp"/>
 </LinearLayout>

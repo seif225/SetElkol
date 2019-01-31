@@ -3,14 +3,15 @@
     package="com.example.setelkol">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label=" "
-        android:name="com.example.setelkol.MyApplication"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Doaa"></activity>
+        <activity android:name=".SouraContent"></activity>
+        <activity android:name=".Doaa" />
         <activity android:name=".Quran" />
         <activity android:name=".AddMeal" />
         <activity
